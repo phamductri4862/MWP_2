@@ -42,7 +42,7 @@ app.use((res, req) => {
 mongoose.set("strictQuery", true);
 mongoose
   .connect(
-    "mongodb+srv://phamductri4862:4862@devltt404.wt9ehvc.mongodb.net/test"
+    "mongodb+srv://phamductri4862:4862@devltt404.wt9ehvc.mongodb.net/?retryWrites=true&w=majority"
   )
   .then((res) => console.log("Connect to database."))
   .catch((err) => {
