@@ -51,7 +51,7 @@ module.exports = {
         }
       }
       result.sort(function compareFn(a, b) {
-        return a.question.localeCompare(b.question);
+        return (a.question).localeCompare(b.question);
       });
       const qas = new Qas({ content: result });
       await qas.save();
